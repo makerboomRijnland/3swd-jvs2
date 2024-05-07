@@ -1,0 +1,159 @@
+:root {
+    --corgi-font: 'Pacifico', cursive;
+    --corgi-blue: #53C6C3;
+    --corgi-candy: #FF5B80;
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--corgi-font);
+    background-color: var(--corgi-blue);
+}
+
+.frame {
+    display:flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#cookie-column {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    border-right: 8px solid silver;
+    margin-right: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--corgi-candy);
+    border-radius: 10px;
+}
+
+.cookies {
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--corgi-candy);
+}
+
+#cookie-counter {
+    width: 80%;
+    text-align: center;
+    font-size: 42px;
+}
+
+#cookies-per-second {
+    font-size: 34px;
+}
+
+#cookie-counter, #cookies-per-second {
+    line-height: 1.4; 
+}
+
+#cookie {
+    margin-top: 50px;
+    max-width: 90%;
+    height: auto;
+}
+
+#middle {
+    display:flex;
+    flex-direction: column;
+    flex: 5;
+    
+}
+
+#menu {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#expansions {
+    min-height: 90vh                            ;
+    background-image: url("/static/images/corgi_chipped_cookies.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.some-button {
+    min-width: 70%;
+    min-height: 70%;
+    background-image: url("/static/images/berries.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--corgi-candy);
+    border-radius: 10px;
+    color: white;
+    font-size: 42px;
+}
+
+#shop {
+    flex: 3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 8px solid silver;
+    margin-left: 20px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product {
+    background-image: url("/static/images/berries.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    max-width: 100%;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid var(--corgi-candy);
+    border-radius: 10px;
+    display: flex;
+    align-items: space-between;
+}
+
+.product img {
+    max-height: 95%;
+    opacity: 1.0;
+    margin-right: 15px;
+}
+
+.product-name {
+    color: white;
+    font-size: 42px;
+}
+
+.price {
+    color: white;
+    font-size: 25px;
+}
+.product-name, .price {
+    line-height: 1.2;
+}
