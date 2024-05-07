@@ -117,43 +117,49 @@ body, html {
     margin-left: 20px;
 }
 
-.products {
+#products {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    width: 100%;
 }
-.product {
+
+#products .product {
     background-image: url("/static/images/berries.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100px;
     max-width: 100%;
-    margin-top: 5px;
+    margin: 0.2rem;
     padding-left: 20px;
     padding-right: 20px;
     border: 2px solid var(--corgi-candy);
     border-radius: 10px;
     display: flex;
     align-items: space-between;
+    color: white;
+    padding: 0.2rem;
 }
 
-.product img {
+#products .product img {
     max-height: 95%;
     opacity: 1.0;
-    margin-right: 15px;
+    margin-right: 0.2rem;
 }
 
-.product-name {
-    color: white;
-    font-size: 42px;
+#products .product .product-name {
+    font-size: 1.5rem;
 }
 
-.price {
-    color: white;
-    font-size: 25px;
+#products .product .price {
+    font-size: 1rem;
 }
-.product-name, .price {
+#products .product .product-name, 
+#products .product .price {
     line-height: 1.2;
+}
+
+#products .product.locked {
+    opacity: 0.3;
 }
