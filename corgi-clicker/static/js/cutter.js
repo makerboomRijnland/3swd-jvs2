@@ -1,14 +1,20 @@
 let corgiCounter = 0;
-let started = new Date();
+let started;
 
 function handleClick() {
+    if(!started) {
+        started = new Date();
+    }
     corgiCounter++;
     document.getElementById('cookie-counter').innerHTML = corgiCounter;
 }
 
 function updateClicksPerSecond() {
-    const time = new Date() - started;
-    const clicksPerSecond = corgiCounter / (time / 1000);
+    let clicksPerSecond = null;
+    if(started) {
+        const time = new Date() - started;
+        clicksPerSecond = corgiCounter / (time / 1000);
+    }
     document.getElementById('cookies-per-second').innerHTML = clicksPerSecond.toFixed(1);
 }
 
