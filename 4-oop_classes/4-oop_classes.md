@@ -13,6 +13,13 @@ Aan het einde van deze les kun je:
 ### Wat is een Object?
 Een object is een verzameling van eigenschappen en methodes. Het kan worden gebruikt om gegevens te organiseren en acties uit te voeren.
 
+```javascript
+console.log() // Methode 'log' van object 'console'
+document.title; // Eigenschap 'title' van object 'document'
+// Eigenschap 'backgroundColor' van de 'style' van de 'body' van het 'document'
+document.body.style.backgroundColor = 'red'; 
+```
+
 De syntax voor objecten is:
 ```javascript
 const person = {
@@ -123,7 +130,7 @@ Je kunt methodes toevoegen aan een object:
 const person = {
     name: 'Alice',
     age: 30,
-    greet: function() {
+    greet() {
         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
     }
 };
